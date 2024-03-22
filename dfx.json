@@ -1,0 +1,20 @@
+{
+  "canisters": {
+    "counter_backend": {
+      "build": "npx azle counter_backend",
+      "candid": "src/counter_backend/counter_backend.did",
+      "gzip": true,
+      "main": "src/counter_backend/src/index.ts",
+      "type": "custom",
+      "wasm": ".azle/counter_backend/counter_backend.wasm"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
