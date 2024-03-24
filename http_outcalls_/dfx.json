@@ -1,0 +1,21 @@
+{
+  "canisters": {
+    "http_outcalls_backend": {
+      "build": "npx azle http_outcalls_backend",
+      "candid": "src/http_outcalls_backend/http_outcalls_backend.did",
+      "gzip": true,
+      "main": "src/http_outcalls_backend/src/index.ts",
+      "type": "custom",
+      "wasm": ".azle/http_outcalls_backend/http_outcalls_backend.wasm",
+      "env": ["COIN_MARKET_CAP_KEY"]
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}

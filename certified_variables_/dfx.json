@@ -1,0 +1,20 @@
+{
+  "canisters": {
+    "certified_variables_backend": {
+      "build": "npx azle certified_variables_backend",
+      "candid": "src/certified_variables_backend/certified_variables_backend.did",
+      "gzip": true,
+      "main": "src/certified_variables_backend/src/index.ts",
+      "type": "custom",
+      "wasm": ".azle/certified_variables_backend/certified_variables_backend.wasm"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}

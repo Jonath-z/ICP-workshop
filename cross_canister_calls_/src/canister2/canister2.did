@@ -1,0 +1,3 @@
+service: () -> {
+    createUser: (text, text) -> (text);
+}

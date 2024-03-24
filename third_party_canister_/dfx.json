@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "third_party_canister_backend": {
+      "build": "npx azle third_party_canister_backend",
+      "candid": "src/third_party_canister_backend/third_party_canister_backend.did",
+      "gzip": true,
+      "main": "src/third_party_canister_backend/src/index.ts",
+      "type": "custom",
+      "wasm": ".azle/third_party_canister_backend/third_party_canister_backend.wasm",
+      "dependencies": ["internet_identity"]
+    },
+
+    "internet_identity": {
+      "type": "pull",
+      "id": "rdmx6-jaaaa-aaaaa-aaadq-cai"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}

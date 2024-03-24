@@ -1,0 +1,30 @@
+{
+  "canisters": {
+    "internet_identity_backend": {
+      "build": "npx azle internet_identity_backend",
+      "candid": "src/internet_identity_backend/internet_identity_backend.did",
+      "gzip": true,
+      "main": "src/internet_identity_backend/src/index.ts",
+      "type": "custom",
+      "wasm": ".azle/internet_identity_backend/internet_identity_backend.wasm"
+    },
+    "internet-identity": {
+      "type": "pull",
+      "id": "rdmx6-jaaaa-aaaaa-aaadq-cai"
+    },
+    "internet_identity_frontend": {
+      "dependencies": ["internet_identity_backend", "internet-identity"],
+      "source": ["src/internet_identity_frontend/dist"],
+      "type": "assets",
+      "workspace": "internet_identity_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
