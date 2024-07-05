@@ -23,7 +23,7 @@ export default Canister({
           headers: [
             {
               name: "X-CMC_PRO_API_KEY",
-              value: "5c877cf8-dd6e-4dc6-bf47-6ad2065ac0cd",
+              value: "-----------------------------------",
             },
           ],
           body: None,
